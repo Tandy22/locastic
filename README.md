@@ -1,0 +1,2 @@
+# locastic
+Projekt za Locastic
