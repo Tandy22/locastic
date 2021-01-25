@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <meta charset="utf-8">
+   <title>Tinel WebShop</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- SEO optimizations -->
+   <meta name="description" content="One Stop Shop For All Things Tinel" />
+   <meta name="keywords" content="Tinel, Webshop, Web, Design, Coding" />
+   <meta name="author" content="Nikola Tandara">
+   <link rel="canonical" href="" /> <!-- Have to add canonical link later -->
+
+   <!-- Search Engine track all links on website -->
+   <meta name="robots" content="all, follow" />
+
+
+   <!-- Tab icons -->
+   <link rel="shortcut icon" href="favicon.png">
+   <link rel="icon" href="favicon.png" type="image/x-icon" />
+
+   <!-- Meta Tags to make links look nicer on social media platforms -->
+   <!-- Facebook meta links -->
+   <meta property="og:locale" content="en_GB" />
+   <meta property="og:type" content="website" />
+   <meta property="og:title" content="Amazing Tinel Workshops" />
+   <meta property="og:description"
+      content="On this link you will find the only place on the internet to buy amazing Tinel workshops" />
+   <meta property="og:url" content="http://tinel-webshop/" />
+   <meta property="og:site_name" content="tinel-webshop.hr" />
+   <meta property="og:image" content="large-image" />
+
+   <!-- Twitter meta links -->
+   <meta name="twitter:card" content="summary-large-image" />
+   <meta name="twitter:description"
+      content="On this link you will find the only place on the internet to buy amazing Tinel workshops" />
+   <meta name="twitter:title" content="Amazing Tinel Workshops" />
+   <meta name="twitter:image:alt" content="This is a image">
+   <!-- Some random image goes here -->
+   <meta name="twitter:image" content="" />
+
+   <!-- Main CSS file-->
+   <!-- <link rel="stylesheet" href="css/Mobile-Index.css" />
+   <link href="css/Critical.css" rel="stylesheet" /> -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- <link href="css/Workshop.css" rel="stylesheet" /> -->
+   <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin
+      href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;700&display=swap">
+
+   <script src="scripts/init.js"></script>
+</head>
+
+<body>
+   <header class="header">
+      <div class="header__logo-container">
+         <a class="header__logo" href="Index.html">
+            <img class="header__logo-icon" src="assets/Tinel-logo.svg" alt="tinel logo image">
+         </a>
+      </div>
+      <div class="header__cart-container">
+         <div class="header__cart">
+            <img class="header__cart-image" src="assets/Cart-icon.svg" alt="cart icon">
+            <img class="header__cart-image--not-empty hidden" src="assets/Blue-dot-icon.svg" alt="cart not empty icon">
+         </div>
+         <h6 class="header__cart-text">Cart is Empty</h6>
+      </div>
+   </header>
+
+   <aside class="aside">
+      <section class="aside__navigation">
+         <h6 class="aside__navigation-intro">Filter by category:</h6>
+         <ul class="aside__navigation-links">
+            <li class="aside__navigation-item">
+               <a class="aside__navigation-link" href="Index.html?section=all">
+                  <h5 class="aside__navigation-link-text">All</h5>
+               </a>
+            </li>
+            <li class="aside__navigation-item">
+               <img class="aside__navigation-link-icon" src="Assets/Design-icon.svg" alt="design icon">
+               <a href="Index.html?section=design">
+                  <h5 class="aside__navigation-link-text">Design</h5>
+               </a>
+            </li>
+            <li class="aside__navigation-item">
+               <img class="aside__navigation-link-icon" src="Assets/Frontend-icon.svg" alt="frontend icon">
+               <a href="Index.html?section=frontend">
+                  <h5 class="aside__navigation-link-text">Frontend</h5>
+               </a>
+            </li>
+            <li class="aside__navigation-item">
+               <img class="aside__navigation-link-icon" src="Assets/Backend-icon.svg" alt="backend icon">
+               <a href="Index.html?section=backend">
+                  <h5 class="aside__navigation-link-text">Backend</h5>
+               </a>
+            </li>
+            <li class="aside__navigation-item">
+               <img class="aside__navigation-link-icon" src="Assets/Marketing-icon.svg" alt="marketing icon">
+               <a href="Index.html?section=marketing">
+                  <h5 class="aside__navigation-link-text">Marketing</h5>
+               </a>
+            </li>
+         </ul>
+      </section>
+   </aside>
+
+   <section class="aside--mobile">
+      <div class="aside--mobile-arrow-down-container">
+         <img class="aside--mobile-arrow-down" src="assets/Arrow-down-icon.svg" alt="arrow down">
+      </div>
+      <h5 class="aside--mobile-current-workshop">Design</h5>
+   </section>
+
+   <!-- This main section represents ALL section, main section below represents the rest of the sections by category -->
+   <main class="main">
+      <div class="main__header">
+         <h2 class="main__header-title">Workshops</h2>
+         <h6 class="main__header-items-displayed">Displayed: <span class="main__header-items-displayed-count">13</span></h6>
+      </div>
+      <div class="main__workshops">
+         <article class="workshop-card" data-id="1" , data-typeId="1">
+            <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+            <div class="workshop-card__icon-container">
+               <img class="workshop-card__icon" src="assets/Card-icon.svg" alt="workshop icon">
+            </div>
+            <section class="workshop-card__time-container">
+               <div class="workshop-card__time-container__calendar">
+                  <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                  <time datetime="27-6-2020">
+                     <h6>27.6.2020</h6>
+                  </time>
+               </div>
+               <div class="workshop-card__time-container__clock">
+                  <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                  <time datetime="9:00">
+                     <h6>9:00h</h6>
+                  </time>
+               </div>
+            </section>
+            <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+            <section class=workshop-card__price-container>
+               <h3 class="workshop-card__price__ammount">495,00</h3>
+               <h6 class="workshop-card__price__currency">EUR</h6>
+            </section>
+            <button class="workshop-card__buy-button">
+               Add To Cart
+            </button>
+         </article>
+         <article class="workshop-card" data-id="2" , data-typeId="1">
+            <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+            <div class="workshop-card__icon-container">
+               <img class="workshop-card__icon" src="assets/Card-icon.svg" alt="workshop icon">
+            </div>
+            <section class="workshop-card__time-container">
+               <div class="workshop-card__time-container__calendar">
+                  <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                  <time datetime="27-6-2020">
+                     <h6>27.6.2020</h6>
+                  </time>
+               </div>
+               <div class="workshop-card__time-container__clock">
+                  <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                  <time datetime="9:00">
+                     <h6>9:00h</h6>
+                  </time>
+               </div>
+            </section>
+            <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+            <section class=workshop-card__price-container>
+               <h3 class="workshop-card__price__ammount">495,00</h3>
+               <h6 class="workshop-card__price__currency">EUR</h6>
+            </section>
+            <button class="workshop-card__buy-button">
+               Add To Cart
+            </button>
+         </article>
+         <article class="workshop-card" data-id="3" , data-typeId="1">
+            <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+            <div class="workshop-card__icon-container">
+               <img class="workshop-card__icon" src="assets/Card-icon.svg" alt="workshop icon">
+            </div>
+            <section class="workshop-card__time-container">
+               <div class="workshop-card__time-container__calendar">
+                  <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                  <time datetime="27-6-2020">
+                     <h6>27.6.2020</h6>
+                  </time>
+               </div>
+               <div class="workshop-card__time-container__clock">
+                  <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                  <time datetime="9:00">
+                     <h6>9:00h</h6>
+                  </time>
+               </div>
+            </section>
+            <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+            <section class=workshop-card__price-container>
+               <h3 class="workshop-card__price__ammount">495,00</h3>
+               <h6 class="workshop-card__price__currency">EUR</h6>
+            </section>
+            <button class="workshop-card__buy-button">
+               Add To Cart
+            </button>
+         </article>
+         <article class="workshop-card" data-id="4" , data-typeId="1">
+            <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+            <div class="workshop-card__icon-container">
+               <img class="workshop-card__icon" src="assets/Card-icon.svg" alt="workshop icon">
+            </div>
+            <section class="workshop-card__time-container">
+               <div class="workshop-card__time-container__calendar">
+                  <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                  <time datetime="27-6-2020">
+                     <h6>27.6.2020</h6>
+                  </time>
+               </div>
+               <div class="workshop-card__time-container__clock">
+                  <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                  <time datetime="9:00">
+                     <h6>9:00h</h6>
+                  </time>
+               </div>
+            </section>
+            <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+            <section class=workshop-card__price-container>
+               <h3 class="workshop-card__price__ammount">495,00</h3>
+               <h6 class="workshop-card__price__currency">EUR</h6>
+            </section>
+            <button class="workshop-card__buy-button">
+               Add To Cart
+            </button>
+         </article>
+         <article class="workshop-card" data-id="5" , data-typeId="1">
+            <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+            <div class="workshop-card__icon-container">
+               <img class="workshop-card__icon" src="assets/Card-icon.svg" alt="workshop icon">
+            </div>
+            <section class="workshop-card__time-container">
+               <div class="workshop-card__time-container__calendar">
+                  <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                  <time datetime="27-6-2020">
+                     <h6>27.6.2020</h6>
+                  </time>
+               </div>
+               <div class="workshop-card__time-container__clock">
+                  <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                  <time datetime="9:00">
+                     <h6>9:00h</h6>
+                  </time>
+               </div>
+            </section>
+            <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+            <section class=workshop-card__price-container>
+               <h3 class="workshop-card__price__ammount">495,00</h3>
+               <h6 class="workshop-card__price__currency">EUR</h6>
+            </section>
+            <button class="workshop-card__buy-button">
+               Add To Cart
+            </button>
+         </article>
+         <article class="workshop-card" data-id="6" , data-typeId="1">
+            <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+            <div class="workshop-card__icon-container">
+               <img class="workshop-card__icon" src="assets/Card-icon.svg" alt="workshop icon">
+            </div>
+            <section class="workshop-card__time-container">
+               <div class="workshop-card__time-container__calendar">
+                  <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                  <time datetime="27-6-2020">
+                     <h6>27.6.2020</h6>
+                  </time>
+               </div>
+               <div class="workshop-card__time-container__clock">
+                  <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                  <time datetime="9:00">
+                     <h6>9:00h</h6>
+                  </time>
+               </div>
+            </section>
+            <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+            <section class=workshop-card__price-container>
+               <h3 class="workshop-card__price__ammount">495,00</h3>
+               <h6 class="workshop-card__price__currency">EUR</h6>
+            </section>
+            <button class="workshop-card__buy-button">
+               Add To Cart
+            </button>
+         </article>
+         <article class="workshop-card" data-id="7" , data-typeId="1">
+            <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+            <div class="workshop-card__icon-container">
+               <img class="workshop-card__icon" src="assets/Card-icon.svg" alt="workshop icon">
+            </div>
+            <section class="workshop-card__time-container">
+               <div class="workshop-card__time-container__calendar">
+                  <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                  <time datetime="27-6-2020">
+                     <h6>27.6.2020</h6>
+                  </time>
+               </div>
+               <div class="workshop-card__time-container__clock">
+                  <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                  <time datetime="9:00">
+                     <h6>9:00h</h6>
+                  </time>
+               </div>
+            </section>
+            <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+            <section class=workshop-card__price-container>
+               <h3 class="workshop-card__price__ammount">495,00</h3>
+               <h6 class="workshop-card__price__currency">EUR</h6>
+            </section>
+            <button class="workshop-card__buy-button">
+               Add To Cart
+            </button>
+         </article>
+         <article class="workshop-card" data-id="8" , data-typeId="1">
+            <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+            <div class="workshop-card__icon-container">
+               <img class="workshop-card__icon" src="assets/Card-icon.svg" alt="workshop icon">
+            </div>
+            <section class="workshop-card__time-container">
+               <div class="workshop-card__time-container__calendar">
+                  <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                  <time datetime="27-6-2020">
+                     <h6>27.6.2020</h6>
+                  </time>
+               </div>
+               <div class="workshop-card__time-container__clock">
+                  <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                  <time datetime="9:00">
+                     <h6>9:00h</h6>
+                  </time>
+               </div>
+            </section>
+            <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+            <section class=workshop-card__price-container>
+               <h3 class="workshop-card__price__ammount">495,00</h3>
+               <h6 class="workshop-card__price__currency">EUR</h6>
+            </section>
+            <button class="workshop-card__buy-button">
+               Add To Cart
+            </button>
+         </article>
+         <article class="workshop-card" data-id="9" , data-typeId="1">
+            <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+            <div class="workshop-card__icon-container">
+               <img class="workshop-card__icon" src="assets/Card-icon.svg" alt="workshop icon">
+            </div>
+            <section class="workshop-card__time-container">
+               <div class="workshop-card__time-container__calendar">
+                  <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                  <time datetime="27-6-2020">
+                     <h6>27.6.2020</h6>
+                  </time>
+               </div>
+               <div class="workshop-card__time-container__clock">
+                  <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                  <time datetime="9:00">
+                     <h6>9:00h</h6>
+                  </time>
+               </div>
+            </section>
+            <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+            <section class=workshop-card__price-container>
+               <h3 class="workshop-card__price__ammount">495,00</h3>
+               <h6 class="workshop-card__price__currency">EUR</h6>
+            </section>
+            <button class="workshop-card__buy-button">
+               Add To Cart
+            </button>
+         </article>
+
+         <!-- Load 9 more elements on click event -->
+
+         <article class="workshop-card" data-id="10" , data-typeId="1">
+            <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+            <div class="workshop-card__icon-container">
+               <img class="workshop-card__icon" src="assets/Card-icon.svg" alt="workshop icon">
+            </div>
+            <section class="workshop-card__time-container">
+               <div class="workshop-card__time-container__calendar">
+                  <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                  <time datetime="27-6-2020">
+                     <h6>27.6.2020</h6>
+                  </time>
+               </div>
+               <div class="workshop-card__time-container__clock">
+                  <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                  <time datetime="9:00">
+                     <h6>9:00h</h6>
+                  </time>
+               </div>
+            </section>
+            <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+            <section class=workshop-card__price-container>
+               <h3 class="workshop-card__price__ammount">495,00</h3>
+               <h6 class="workshop-card__price__currency">EUR</h6>
+            </section>
+            <button class="workshop-card__buy-button">
+               Add To Cart
+            </button>
+         </article>
+         <article class="workshop-card" data-id="11" , data-typeId="1">
+            <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+            <div class="workshop-card__icon-container">
+               <img class="workshop-card__icon" src="assets/Card-icon.svg" alt="workshop icon">
+            </div>
+            <section class="workshop-card__time-container">
+               <div class="workshop-card__time-container__calendar">
+                  <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                  <time datetime="27-6-2020">
+                     <h6>27.6.2020</h6>
+                  </time>
+               </div>
+               <div class="workshop-card__time-container__clock">
+                  <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                  <time datetime="9:00">
+                     <h6>9:00h</h6>
+                  </time>
+               </div>
+            </section>
+            <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+            <section class=workshop-card__price-container>
+               <h3 class="workshop-card__price__ammount">495,00</h3>
+               <h6 class="workshop-card__price__currency">EUR</h6>
+            </section>
+            <button class="workshop-card__buy-button">
+               Add To Cart
+            </button>
+         </article>
+         <article class="workshop-card" data-id="12" , data-typeId="1">
+            <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+            <div class="workshop-card__icon-container">
+               <img class="workshop-card__icon" src="assets/Card-icon.svg" alt="workshop icon">
+            </div>
+            <section class="workshop-card__time-container">
+               <div class="workshop-card__time-container__calendar">
+                  <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                  <time datetime="27-6-2020">
+                     <h6>27.6.2020</h6>
+                  </time>
+               </div>
+               <div class="workshop-card__time-container__clock">
+                  <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                  <time datetime="9:00">
+                     <h6>9:00h</h6>
+                  </time>
+               </div>
+            </section>
+            <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+            <section class=workshop-card__price-container>
+               <h3 class="workshop-card__price__ammount">495,00</h3>
+               <h6 class="workshop-card__price__currency">EUR</h6>
+            </section>
+            <button class="workshop-card__buy-button">
+               Add To Cart
+            </button>
+         </article>
+         <article class="workshop-card" data-id="13" , data-typeId="1">
+            <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+            <div class="workshop-card__icon-container">
+               <img class="workshop-card__icon" src="assets/Card-icon.svg" alt="workshop icon">
+            </div>
+            <section class="workshop-card__time-container">
+               <div class="workshop-card__time-container__calendar">
+                  <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                  <time datetime="27-6-2020">
+                     <h6>27.6.2020</h6>
+                  </time>
+               </div>
+               <div class="workshop-card__time-container__clock">
+                  <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                  <time datetime="9:00">
+                     <h6>9:00h</h6>
+                  </time>
+               </div>
+            </section>
+            <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+            <section class=workshop-card__price-container>
+               <h3 class="workshop-card__price__ammount">495,00</h3>
+               <h6 class="workshop-card__price__currency">EUR</h6>
+            </section>
+            <button class="workshop-card__buy-button">
+               Add To Cart
+            </button>
+         </article>
+         <article class="workshop-card" data-id="14" , data-typeId="1">
+            <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+            <div class="workshop-card__icon-container">
+               <img class="workshop-card__icon" src="assets/Card-icon.svg" alt="workshop icon">
+            </div>
+            <section class="workshop-card__time-container">
+               <div class="workshop-card__time-container__calendar">
+                  <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                  <time datetime="27-6-2020">
+                     <h6>27.6.2020</h6>
+                  </time>
+               </div>
+               <div class="workshop-card__time-container__clock">
+                  <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                  <time datetime="9:00">
+                     <h6>9:00h</h6>
+                  </time>
+               </div>
+            </section>
+            <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+            <section class=workshop-card__price-container>
+               <h3 class="workshop-card__price__ammount">495,00</h3>
+               <h6 class="workshop-card__price__currency">EUR</h6>
+            </section>
+            <button class="workshop-card__buy-button">
+               Add To Cart
+            </button>
+         </article>
+         <article class="workshop-card" data-id="15" , data-typeId="1">
+            <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+            <div class="workshop-card__icon-container">
+               <img class="workshop-card__icon" src="assets/Card-icon.svg" alt="workshop icon">
+            </div>
+            <section class="workshop-card__time-container">
+               <div class="workshop-card__time-container__calendar">
+                  <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                  <time datetime="27-6-2020">
+                     <h6>27.6.2020</h6>
+                  </time>
+               </div>
+               <div class="workshop-card__time-container__clock">
+                  <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                  <time datetime="9:00">
+                     <h6>9:00h</h6>
+                  </time>
+               </div>
+            </section>
+            <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+            <section class=workshop-card__price-container>
+               <h3 class="workshop-card__price__ammount">495,00</h3>
+               <h6 class="workshop-card__price__currency">EUR</h6>
+            </section>
+            <button class="workshop-card__buy-button">
+               Add To Cart
+            </button>
+         </article>
+         <article class="workshop-card" data-id="16" , data-typeId="1">
+            <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+            <div class="workshop-card__icon-container">
+               <img class="workshop-card__icon" src="assets/Card-icon.svg" alt="workshop icon">
+            </div>
+            <section class="workshop-card__time-container">
+               <div class="workshop-card__time-container__calendar">
+                  <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                  <time datetime="27-6-2020">
+                     <h6>27.6.2020</h6>
+                  </time>
+               </div>
+               <div class="workshop-card__time-container__clock">
+                  <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                  <time datetime="9:00">
+                     <h6>9:00h</h6>
+                  </time>
+               </div>
+            </section>
+            <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+            <section class=workshop-card__price-container>
+               <h3 class="workshop-card__price__ammount">495,00</h3>
+               <h6 class="workshop-card__price__currency">EUR</h6>
+            </section>
+            <button class="workshop-card__buy-button">
+               Add To Cart
+            </button>
+         </article>
+         <article class="workshop-card" data-id="17" , data-typeId="1">
+            <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+            <div class="workshop-card__icon-container">
+               <img class="workshop-card__icon" src="assets/Card-icon.svg" alt="workshop icon">
+            </div>
+            <section class="workshop-card__time-container">
+               <div class="workshop-card__time-container__calendar">
+                  <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                  <time datetime="27-6-2020">
+                     <h6>27.6.2020</h6>
+                  </time>
+               </div>
+               <div class="workshop-card__time-container__clock">
+                  <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                  <time datetime="9:00">
+                     <h6>9:00h</h6>
+                  </time>
+               </div>
+            </section>
+            <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+            <section class=workshop-card__price-container>
+               <h3 class="workshop-card__price__ammount">495,00</h3>
+               <h6 class="workshop-card__price__currency">EUR</h6>
+            </section>
+            <button class="workshop-card__buy-button">
+               Add To Cart
+            </button>
+         </article>
+         <article class="workshop-card" data-id="18" , data-typeId="1">
+            <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+            <div class="workshop-card__icon-container">
+               <img class="workshop-card__icon" src="assets/Card-icon.svg" alt="workshop icon">
+            </div>
+            <section class="workshop-card__time-container">
+               <div class="workshop-card__time-container__calendar">
+                  <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                  <time datetime="27-6-2020">
+                     <h6>27.6.2020</h6>
+                  </time>
+               </div>
+               <div class="workshop-card__time-container__clock">
+                  <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                  <time datetime="9:00">
+                     <h6>9:00h</h6>
+                  </time>
+               </div>
+            </section>
+            <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+            <section class=workshop-card__price-container>
+               <h3 class="workshop-card__price__ammount">495,00</h3>
+               <h6 class="workshop-card__price__currency">EUR</h6>
+            </section>
+            <button class="workshop-card__buy-button">
+               Add To Cart
+            </button>
+         </article>
+      </div>
+   </main>
+
+   <aside class="cart hidden">
+      <div class="cart__header">
+         <div class="cart__status">
+            <div class="cart__status-icon">
+               <img class="cart__cart-icon" src="assets/Cart-icon.svg" alt="cart icon">
+               <img class="cart__cart-icon--not-empty hidden" src="assets/Blue-dot-icon.svg"
+                  alt="cart not empty icon">
+            </div>
+            <h5 class="cart__status-text">Cart is Empty</h5>
+         </div>
+         <div class="cart__close">
+            <img class="cart__close-icon" src="assets/Close-icon.svg" alt="close icon">
+         </div>
+      </div>
+
+      <div class="cart__items-container">
+         <ul class="cart__items">
+            <li class="cart__item">
+
+               <article class="cart__item-info">
+
+                  <div class="cart__item-image-container">
+                     <img class="cart__item-image" src="assets/Cart-workshop-item-picture.jpg"
+                        alt="workshop image">
+                  </div>
+
+                  <div class="cart__item-details">
+
+                     <div class="cart__item-header">
+                        <h4 class="cart__item-name">Interaction Desgn Workshop</h4>
+                        <img class="cart__item-remove" src="assets/Trash-icon.svg" alt="delete icon">
+                     </div>
+
+                     <div class="cart__item-status">
+                        <form>
+                           <div class="cart__item-amount">
+                              <div class="cart__item-amount-number">
+                                 <!--TODO: check this out => <h5 class="h5-mobile">0</h5>-->
+                                 <input class="cart__item-amount-number-field" type="number" step="1" min="0" max="10" value="10">
+                              </div>
+                              <span class="cart__item-amount-decrease">
+                                 <img class="cart__item-amount-decrease-icon" src="assets/Arrow-down-icon.svg" alt="down arrow icon">
+                              </span>
+                           </div>
+                        </form>
+
+                        <div class="cart__item-price">
+                           <h3 class="cart__item-price-amount" class="h3-mobile">450,00</h3>
+                           <h6 class="cart__item-price-currency">EUR</h6>
+                        </div>
+                     </div>
+                  </div>
+
+               </article>
+            </li>
+         </ul>
+      </div>
+
+      <div class="cart__subtotal">
+         <h6 class="cart__subtotal-text">SUBTOTAL</h6>
+         <div class="cart__subtotal-price">
+            <h2 class="cart__subtotal-price-amount">450,00</h2>
+            <h4 class="cart__subtotal-price-currency">EUR</h4>
+         </div>
+         <button class="cart__checkout">
+            <h5 class="cart__checkout-button">Checkout</h5>
+         </button>
+      </div>
+      </div>
+   </aside>
+
+   <div class="modal modal__background"></div>
+   <!-- Iznimka: modal ce imati idove radi focusa na input -->
+   <div class="modal modal__checkout">
+      <article class="checkout">
+         <div class="checkout__header">
+            <h2 class="checkout__header-title">Checkout</h2>
+            <div class="checkout__close">
+               <img class="checkout__close-icon" src="assets/Close-icon.svg" alt="close this">
+            </div>
+            <div class="flex-break"></div>
+            <h6 class="checkout__header-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+               doloremque facere tempora repellendus?
+            </h6>
+         </div>
+         <form class="checkout__form" novalidate>
+            <div class="checkout__form-control checkout__first-name">
+               <label for="first-name" class="checkout__form-control-name">First Name</label><span
+                  class="alert-text">First name contains invalid
+                  symbol</span>
+               <input id="first-name" class="checkout__form-control--text" type="text"
+                  placeholder="Type your first name here" required>
+            </div>
+            <div class="checkout__form-control checkout__last-name">
+               <label for="last-name" class="checkout__form-control-name">Last Name</label><span class="alert-text">
+                  Last
+                  name contains invalid
+                  symbol</span>
+               <input id="last-name" class="checkout__form-control--text" type="text"
+                  placeholder="Type your last name here" required>
+            </div>
+            <div class="checkout__form-control checkout__email">
+               <label for="email" class="checkout__form-control-name">Email Address</label><span class="alert-text">You
+                  entered invalid email
+                  address!"</span>
+               <input id="email" class="checkout__form-control--text" type="email"
+                  placeholder="Type your email address here" required>
+            </div>
+
+            <div class="checkout__form-control checkout__form-control--flex">
+               <div class="checkout__birthdate">
+                  <label for="calendar" class="checkout__form-control-name">Date of Birth</label>
+                  <div class="checkout__form-control--birthdate-calendar">
+                     <!-- vidjeti sto sa ovim flex da ne bude kolizije sa ovim iznad-->
+                     <div class="checkout__form-control-icon-container">
+                        <img class="checkout__form-control--birthdate-calendar-icon" src="assets/Calendar-icon.svg"
+                           alt="calendar icon">
+                     </div>
+                     <input class="checkout__form-control--birthdate-calendar-date-picker" id="calendar" type="date"
+                        required>
+                  </div>
+               </div>
+               <div class="checkout__gender">
+                  <label for="gender" class="checkout__form-control-name">Gender</label>
+                  <div class="checkout__form-control--gender">
+                     <select class="checkout__form-control--gender-picker" name="gender-picker" id="gender">
+                        <option value="other">Other</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                     </select>
+                     <div class="checkout__form-control--gender-picker-arrow-container">
+                        <img class="checkout__form-control--gender-picker-arrow" src="assets/Arrow-down-black-icon.svg"
+                           alt="arrow down icon">
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="checkout__form-control">
+               <fieldset class="checkout__form-control--set checkout__address">
+                  <div class="checkout__address-street">
+                     <label for="address" class="checkout__form-control-name">Address</label>
+                     <input id="address" class="checkout__form-control--text" type="text" placeholder="Type your address here" required>
+                  </div>
+
+                  <div class="checkout__address-postal-code">
+                     <label for="zip-code" class="checkout__form-control-name">Zip Code</label>
+                     <input id="zip-code" class="checkout__form-control--number" type="number" placeholder="eg. 2130" required>
+                  </div>
+               </fieldset>
+            </div>
+
+            <div class="checkout__form-control checkout__agree">
+               <div class="checkout__form-control--agree">
+                  <input class="checkout__form-control--agree-checkbox" type="checkbox" id="agree-button" checked>
+                  <label class="checkout__form-control--agree-text" for="agree-button">I agree</label>
+               </div>
+            </div>
+
+            <div class="checkout__form-control checkout__button-checkout">
+               <input class="checkout__form-button" type="submit" value="Checkout">
+            </div>
+         </form>
+
+      </article>
+   </div>
+   <!-- Ovaj kod se aktivira nakon sta se pritisne checkout botun -->
+   <div class="modal modal__checkout-done">
+      <article class="checkout-done">
+         <div class="checkout-done__text-container">
+            <h2 class="checkout-done__title">Thank You</h2>
+            <h6 class="checkout-done__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla sint dicta
+               aperiam a?</h6>
+         </div>
+         <button class="checkout-done__button">Back to Shop</button>
+      </article>
+   </div>
+
+   <section class="load-more">
+      <div class="load-more__text-container">
+         <h5 class="load-more__text">Load More</h5>
+      </div>
+   </section>
+
+   <footer class="footer">
+      <div class="footer__copyright">
+         <h6 class="footer__copyright-text">&copy; TINEL Meetup 2020</h6>
+      </div>
+   </footer>
+
+   <script src="scripts/shared.js"></script>
+   <script src="scripts/index.js"></script>
+
+</body>
+
+</html>

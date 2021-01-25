@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Tab icons -->
+   <link rel="shortcut icon" href="favicon.png">
+   <link rel="icon" href="favicon.png" type="image/x-icon" />
+
+   <title>Workshop Title</title>
+   <!-- <link href="css/Critical.css" rel="stylesheet" />
+   <link href="css/Workshop.css" rel="stylesheet" />
+   <link href="css/Mobile-Workshop.css" rel="stylesheet" type="text/css" /> -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin
+      href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700&display=swap">
+
+   <script src="scripts/init.js"></script>
+</head>
+
+<body>
+
+   <header class="header">
+      <div class="header__logo-container">
+         <a class="header__logo" href="Index.html">
+            <img class="header__logo-icon" src="assets/Tinel-logo.svg" alt="tinel logo image">
+         </a>
+      </div>
+      <div class="header__cart-container">
+         <div class="header__cart">
+            <img class="header__cart-image" src="assets/Cart-icon.svg" alt="cart icon">
+            <img class="header__cart-image--not-empty hidden" src="assets/Blue-dot-icon.svg" alt="cart not empty icon">
+         </div>
+         <h6 class="header__cart-text">Cart is Empty</h6>
+      </div>
+   </header>
+
+   <aside class="aside aside--display">
+      <nav class="aside__navigation-back">
+         <div class="aside__navigation-back__icon-container">
+            <img class="aside__navigation-back__icon" src="assets/Left-arrow-icon.svg" alt="go back icon">
+         </div>
+         <h6 class="aside__navigation-back__text">Natrag</h6>
+      </nav>
+   </aside>
+
+   <main class="workshop-site">
+      <section class="workshop-site__header-image-container">
+         <img class="workshop-site__header-image" src="assets/Workshop-image.jpg" alt="workshop image">
+         <img class="workshop-site__header-image--mobile" src="assets/Workshop-image-mobile.png" alt="workshop image">
+      </section>
+
+      <div class="workshop-site__workshop-in-detail">
+         <article class="workshop-in-detail__workshop" data-id="1">
+            <section class="workshop-in-detail__time-container">
+               <div class="workshop-in-detail__icon-container">
+                  <img class="workshop-in-detail__icon" src="assets/Card-icon.svg" alt="design icon">
+               </div>
+               <div class="workshop-in-detail__time-container__calendar">
+                  <img class="workshop-in-detail__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                  <time class="workshop-in-detail__time-container__date-el" datetime="27-6-2020">
+                     <h6 class="workshop-in-detail__time-container__date">Sub 27.6.2020</h6>
+                  </time>
+               </div>
+               <div class="workshop-in-detail__time-container__clock">
+                  <img class="workshop-in-detail__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                  <time class="workshop-in-detail__time-container__time-el" datetime="9:00">
+                     <h6 class="workshop-in-detail__time-container__time">9:00 h</h6>
+                  </time>
+               </div>
+            </section>
+
+            <h1 class="workshop-in-detail__title">Interaction Design Workshop</h1>
+            <div class="workshop-in-detail__speaker">
+               <p>WITH</p>
+               <h5 class="workshop-in-detail__speaker-name">Marko Maljković</h5>
+            </div>
+            <p class="workshop-in-detail__description-paragraph">
+               What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum
+               has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of
+               type and scrambled it to make a type specimen book it has?
+            </p>
+            <p class="workshop-in-detail__description-paragraph">
+               What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum
+               has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of
+               type and scrambled it to make a type specimen book it has?
+            </p>
+
+         </article>
+
+         <aside class="buy-now-section">
+            <h5 class="buy-now__title">Buy Your Ticket</h5>
+            <div class="buy-now__price">
+               <h2 class="buy-now__price__ammount">495,00</h2>
+               <h5 class="buy-now__price__currency">EUR</h5>
+            </div>
+            <section class="buy-now__item-controls">
+               <form>
+                  <div class="buy-now__item-amount">
+                     <div class="buy-now__item-amount-number">
+                        <!--TODO: check this out => <h5 class="number-placement__number">0</h5>-->
+                        <input class="buy-now__item-amount-number-field" type="number" step="1" min="0" max="10" value="10">
+                     </div>
+                     <span class="buy-now__item-amount-decrease">
+                        <img class="buy-now__item-amount-decrease-icon" src="assets/Arrow-down-icon.svg" alt="down arrow icon">
+                     </span>
+                  </div>
+               </form>
+               <button class="buy-now__button">
+                  Add to Cart
+               </button>
+            </section>
+            <h6 class="buy-now__subtotal">Subtotal: <span class="buy-now__subtotal-amount">4.950,00</span> <span
+                  class="buy-now__subtotal-currency">HRK</span></h6>
+         </aside>
+      </div>
+
+   </main>
+
+   <section class="similar-workshops">
+      <div class="similar-workshops__container">
+         <h2 class="similar-workshops__title">Similar Workshops</h2>
+         <div class="similar-workshops__cards-container">
+
+            <article class="workshop-card" data-id="1">
+               <div class="workshop-card__image-container">
+                  <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+                  <img class="workshop-card__image--mobile" src="assets/Cart-workshop-item-picture.jpg" alt="card header image">
+                  </div>
+                  <div class="workshop-card__flex-row">
+                     <div class="workshop-card__icon-container">
+                        <img class="workshop-card__icon" src="assets/Design-icon-white.svg" alt="workshop icon">
+                     </div>
+                     <section class="workshop-card__time-container">
+                        <div class="workshop-card__time-container__calendar">
+                           <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                           <time datetime="27-6-2020">
+                              <h6>27.6.2020</h6>
+                           </time>
+                        </div>
+                        <div class="workshop-card__time-container__clock">
+                           <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                           <time datetime="9:00">
+                              <h6>9:00h</h6>
+                           </time>
+                        </div>
+                     </section>
+                     <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+                     <section class=workshop-card__price-container>
+                        <h3 class="workshop-card__price__ammount">495,00</h3>
+                        <h6 class="workshop-card__price__currency">EUR</h6>
+                     </section>
+                     <button class="workshop-card__buy-button">
+                        <span class="workshop-card__buy-button-text">Add to Cart</span>
+                        <img class="workshop-card__buy-button-icon" src="assets/Cart-icon.svg" alt="cart icon">
+                     </button>
+                  </div>
+            </article>
+
+            <article class="workshop-card" data-id="1">
+               <div class="workshop-card__image-container">
+                  <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+                  <img class="workshop-card__image--mobile" src="assets/Cart-workshop-item-picture.jpg" alt="card header image">
+                  </div>
+                  <div class="workshop-card__flex-row">
+                     <div class="workshop-card__icon-container">
+                        <img class="workshop-card__icon" src="assets/Design-icon-white.svg" alt="workshop icon">
+                     </div>
+                     <section class="workshop-card__time-container">
+                        <div class="workshop-card__time-container__calendar">
+                           <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                           <time datetime="27-6-2020">
+                              <h6>27.6.2020</h6>
+                           </time>
+                        </div>
+                        <div class="workshop-card__time-container__clock">
+                           <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                           <time datetime="9:00">
+                              <h6>9:00h</h6>
+                           </time>
+                        </div>
+                     </section>
+                     <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+                     <section class=workshop-card__price-container>
+                        <h3 class="workshop-card__price__ammount">495,00</h3>
+                        <h6 class="workshop-card__price__currency">EUR</h6>
+                     </section>
+                     <button class="workshop-card__buy-button">
+                        <span class="workshop-card__buy-button-text">Add to Cart</span>
+                        <img class="workshop-card__buy-button-icon" src="assets/Cart-icon.svg" alt="cart icon">
+                     </button>
+                  </div>
+            </article>
+
+            <article class="workshop-card" data-id="1">
+               <div class="workshop-card__image-container">
+                  <img class="workshop-card__image" src="assets/Workshop-header.jpg" alt="card header image">
+                  <img class="workshop-card__image--mobile" src="assets/Cart-workshop-item-picture.jpg" alt="card header image">
+                  </div>
+                  <div class="workshop-card__flex-row">
+                     <div class="workshop-card__icon-container">
+                        <img class="workshop-card__icon" src="assets/Design-icon-white.svg" alt="workshop icon">
+                     </div>
+                     <section class="workshop-card__time-container">
+                        <div class="workshop-card__time-container__calendar">
+                           <img class="workshop-card__time-container__calendar-icon" src="assets/Calendar-icon.svg" alt="calendar icon">
+                           <time datetime="27-6-2020">
+                              <h6>27.6.2020</h6>
+                           </time>
+                        </div>
+                        <div class="workshop-card__time-container__clock">
+                           <img class="workshop-card__time-container__clock-icon" src="assets/Clock-icon.svg" alt="clock icon">
+                           <time datetime="9:00">
+                              <h6>9:00h</h6>
+                           </time>
+                        </div>
+                     </section>
+                     <h4 class="workshop-card__title">Interaction Design Workshop</h4>
+                     <section class=workshop-card__price-container>
+                        <h3 class="workshop-card__price__ammount">495,00</h3>
+                        <h6 class="workshop-card__price__currency">EUR</h6>
+                     </section>
+                     <button class="workshop-card__buy-button">
+                        <span class="workshop-card__buy-button-text">Add to Cart</span>
+                        <img class="workshop-card__buy-button-icon" src="assets/Cart-icon.svg" alt="cart icon">
+                     </button>
+                  </div>
+            </article>
+
+         </div>
+      </div>
+   </section>
+
+   <aside class="cart hidden">
+      <div class="cart__header">
+         <div class="cart__status">
+            <div class="cart__status-icon">
+               <img class="cart__cart-icon" src="assets/Cart-icon.svg" alt="cart icon">
+               <img class="cart__cart-icon--not-empty hidden" src="assets/Blue-dot-icon.svg"
+                  alt="cart not empty icon">
+            </div>
+            <h5 class="cart__status-text">Cart is Empty</h5>
+         </div>
+         <div class="cart__close">
+            <img class="cart__close-icon" src="assets/Close-icon.svg" alt="close icon">
+         </div>
+      </div>
+
+      <div class="cart__items-container">
+         <ul class="cart__items">
+            <li class="cart__item">
+
+               <article class="cart__item-info">
+
+                  <div class="cart__item-image-container">
+                     <img class="cart__item-image" src="assets/Cart-workshop-item-picture.jpg"
+                        alt="workshop image">
+                  </div>
+
+                  <div class="cart__item-details">
+
+                     <div class="cart__item-header">
+                        <h4 class="cart__item-name">Interaction Desgn Workshop</h4>
+                        <img class="cart__item-remove" src="assets/Trash-icon.svg" alt="delete icon">
+                     </div>
+
+                     <div class="cart__item-status">
+                        <form>
+                           <div class="cart__item-amount">
+                              <div class="cart__item-amount-number">
+                                 <!--TODO: check this out => <h5 class="h5-mobile">0</h5>-->
+                                 <input class="cart__item-amount-number-field" type="number" step="1" min="0" max="10" value="10">
+                              </div>
+                              <span class="cart__item-amount-decrease">
+                                 <img class="cart__item-amount-decrease-icon" src="assets/Arrow-down-icon.svg" alt="down arrow icon">
+                              </span>
+                           </div>
+                        </form>
+
+                        <div class="cart__item-price">
+                           <h3 class="cart__item-price-amount" class="h3-mobile">450,00</h3>
+                           <h6 class="cart__item-price-currency">EUR</h6>
+                        </div>
+                     </div>
+                  </div>
+
+               </article>
+            </li>
+         </ul>
+      </div>
+
+      <div class="cart__subtotal">
+         <h6 class="cart__subtotal-text">SUBTOTAL</h6>
+         <div class="cart__subtotal-price">
+            <h2 class="cart__subtotal-price-amount">450,00</h2>
+            <h4 class="cart__subtotal-price-currency">EUR</h4>
+         </div>
+         <button class="cart__checkout">
+            <h5 class="cart__checkout-button">Checkout</h5>
+         </button>
+      </div>
+      </div>
+   </aside>
+
+   <div class="modal modal__background"></div>
+   <!-- Iznimka: modal ce imati idove radi focusa na input -->
+   <div class="modal modal__checkout">
+      <article class="checkout">
+         <div class="checkout__header">
+            <h2 class="checkout__header-title">Checkout</h2>
+            <div class="checkout__close">
+               <img class="checkout__close-icon" src="assets/Close-icon.svg" alt="close this">
+            </div>
+            <div class="flex-break"></div>
+            <h6 class="checkout__header-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+               doloremque facere tempora repellendus?
+            </h6>
+         </div>
+         <form class="checkout__form" novalidate>
+            <div class="checkout__form-control checkout__first-name">
+               <label for="first-name" class="checkout__form-control-name">First Name</label><span
+                  class="alert-text">First name contains invalid
+                  symbol</span>
+               <input id="first-name" class="checkout__form-control--text" type="text"
+                  placeholder="Type your first name here" required>
+            </div>
+            <div class="checkout__form-control checkout__last-name">
+               <label for="last-name" class="checkout__form-control-name">Last Name</label><span class="alert-text">
+                  Last
+                  name contains invalid
+                  symbol</span>
+               <input id="last-name" class="checkout__form-control--text" type="text"
+                  placeholder="Type your last name here" required>
+            </div>
+            <div class="checkout__form-control checkout__email">
+               <label for="email" class="checkout__form-control-name">Email Address</label><span class="alert-text">You
+                  entered invalid email
+                  address!"</span>
+               <input id="email" class="checkout__form-control--text" type="email"
+                  placeholder="Type your email address here" required>
+            </div>
+
+            <div class="checkout__form-control checkout__form-control--flex">
+               <div class="checkout__birthdate">
+                  <label for="calendar" class="checkout__form-control-name">Date of Birth</label>
+                  <div class="checkout__form-control--birthdate-calendar">
+                     <!-- vidjeti sto sa ovim flex da ne bude kolizije sa ovim iznad-->
+                     <div class="checkout__form-control-icon-container">
+                        <img class="checkout__form-control--birthdate-calendar-icon" src="assets/Calendar-icon.svg"
+                           alt="calendar icon">
+                     </div>
+                     <input class="checkout__form-control--birthdate-calendar-date-picker" id="calendar" type="date"
+                        required>
+                  </div>
+               </div>
+               <div class="checkout__gender">
+                  <label for="gender" class="checkout__form-control-name">Gender</label>
+                  <div class="checkout__form-control--gender">
+                     <select class="checkout__form-control--gender-picker" name="gender-picker" id="gender">
+                        <option value="other">Other</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                     </select>
+                     <div class="checkout__form-control--gender-picker-arrow-container">
+                        <img class="checkout__form-control--gender-picker-arrow" src="assets/Arrow-down-black-icon.svg"
+                           alt="arrow down icon">
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="checkout__form-control">
+               <fieldset class="checkout__form-control--set checkout__address">
+                  <div class="checkout__address-street">
+                     <label for="address" class="checkout__form-control-name">Address</label>
+                     <input id="address" class="checkout__form-control--text" type="text" placeholder="Type your address here" required>
+                  </div>
+
+                  <div class="checkout__address-postal-code">
+                     <label for="zip-code" class="checkout__form-control-name">Zip Code</label>
+                     <input id="zip-code" class="checkout__form-control--number" type="number" placeholder="eg. 2130" required>
+                  </div>
+               </fieldset>
+            </div>
+
+            <div class="checkout__form-control checkout__agree">
+               <div class="checkout__form-control--agree">
+                  <input class="checkout__form-control--agree-checkbox" type="checkbox" id="agree-button" checked>
+                  <label class="checkout__form-control--agree-text" for="agree-button">I agree</label>
+               </div>
+            </div>
+
+            <div class="checkout__form-control checkout__button-checkout">
+               <input class="checkout__form-button" type="submit" value="Checkout">
+            </div>
+         </form>
+
+      </article>
+   </div>
+   <!-- Ovaj kod se aktivira nakon sta se pritisne checkout botun -->
+   <div class="modal modal__checkout-done">
+      <article class="checkout-done">
+         <div class="checkout-done__text-container">
+            <h2 class="checkout-done__title">Thank You</h2>
+            <h6 class="checkout-done__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla sint dicta
+               aperiam a?</h6>
+         </div>
+         <button class="checkout-done__button">Back to Shop</button>
+      </article>
+   </div>
+
+   <footer class="footer">
+      <div class="footer__copyright">
+         <h6 class="footer__copyright-text">&copy; TINEL Meetup 2020</h6>
+      </div>
+   </footer>
+
+   <script src="scripts/shared.js"></script>
+   <script src="scripts/workshop.js"></script>
+
+</body>
+
+</html>

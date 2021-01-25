@@ -1,0 +1,32 @@
+{
+  "name": "locastic-web-shop",
+  "version": "1.0.0",
+  "description": "Locastic web shop as assignment for job position",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/temp/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/temp/style.comp.css -o css/temp/style.prefix.css",
+    "compress:css": "node-sass css/temp/style.prefix.css css/style.css --output-style compressed",
+    "clean:css": "del-cli css/temp",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css clean:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tandy22/locastic-web-shop.git"
+  },
+  "author": "Nikola Tandara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tandy22/locastic-web-shop/issues"
+  },
+  "homepage": "https://github.com/Tandy22/locastic-web-shop#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.3",
+    "del-cli": "^3.0.1",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1"
+  }
+}
